@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  font-family: "Fira Code";
+}
+
+.new-project button {
+  margin-top: 8px;
+  background-color: #981345;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: #981345;
+}
+
+.form-container {
+  width: 50%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+  gap: 8px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control label {
+  flex: 0.4;
+  font-size: 16px;
+  font-weight: bold;
+  color: #981345;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+.form-control input,
+.form-control textarea {
+  flex: 0.6;
+  padding: 4px 10px;
+  border: 1px solid;
+  border-color: #981345;
+  border-radius: 5px;
+}
+
+@media (max-width: 971px) {
+  .form-control {
+    flex-direction: column;
+    width: 100%;
+    /* align-items: flex-start; */
+  }
+  .form-control input,
+  .form-control textarea {
+    flex: 1;
+    width: 100%;
+    align-self: flex-start;
+  }
+  .form-control label {
+    flex: 0;
+    /* text-align: left; */
+    align-self: flex-start;
+  }
+}
+.form-control input:focus,
+.form-control textarea:focus {
+  outline: none;
+  background-color: #98134620;
+}
+
+.submit {
+  margin-top: 8px;
+  background-color: #981345;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+#project-list {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 10px;
+  margin: 40px;
+}
+
+.project-list--active,
+.project-list--finished {
+  border: 2px solid #1bab6d;
+  /* padding: 8px; */
+  align-self: flex-start;
+
+  /* overflow: scroll; */
+  overflow: auto;
+}
+
+.heading {
+  background-color: #5e64d3;
+  color: #fff;
+  padding: 8px;
+}
+
+.list {
+  list-style: none;
+  padding: 10px;
+}
+
+.list-item--title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #122ddd;
+}
+
+.list-item--description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444448;
+}
+
+.list-item--actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.list-item--actions button {
+  background-color: #811212;
+  color: #fff;
+  border: none;
+  /* margin: 8px ; */
+  padding: 8px 10px;
+  cursor: pointer;
+}
